@@ -1,3 +1,4 @@
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 
@@ -8,6 +9,11 @@
 @import 'additional-styles/theme.css';
 
 @import 'tailwindcss/utilities';
+
+/* @font-face {
+    font-family: Mona Sans;
+    src: url('/public/fonts/MonaSans-ExtraBold.woff2');
+} */
 
 /* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
 @layer utilities {
