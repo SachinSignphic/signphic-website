@@ -1,12 +1,14 @@
 // import VideoThumb from '@/public/images/hero-image-01.jpg'
 // import ModalVideo from '@/components/modal-video'
+'use client'
 import Image from 'next/image'
 import SignphicLogo from '@/public/images/signphic-logo.png'
+import Spline from '@splinetool/react-spline';
 
 export default function Hero() {
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
 
         {/* Illustration behind hero content */}
         {/* <div className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none" aria-hidden="true" data-aos="fade-up" data-aos-delay="400">
@@ -22,13 +24,13 @@ export default function Hero() {
         </div> */}
 
         {/* Hero content */}
-        <div className="relative flex items-center justify-between h-screen pt-32 pb-10 md:pt-40 md:pb-16">
+        <div className="relative flex w-full items-start md:items-center justify-between h-screen pt-32 pb-10 flex-col md:flex-row md:pt-40 md:pb-16">
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-left pb-12 md:pb-16 ">
-            <h1 className="text-9xl mb-4 font-monasans text-white" data-aos="fade-up">Building</h1>
-            <h1 className="text-9xl mb-4 font-monasans text-white" data-aos="fade-up">Digital</h1>
-            <h1 className="text-9xl mb-4 font-monasans text-white" data-aos="fade-up">Signifiance</h1>
+            <h1 className="text-5xl leading-none md:text-9xl mb-4 font-monasans text-white" data-aos="fade-up">Building</h1>
+            <h1 className="text-5xl leading-none md:text-9xl mb-4 font-monasans text-white" data-aos="fade-up">Digital</h1>
+            <h1 className="text-5xl leading-none md:text-9xl mb-4 font-monasans text-white" data-aos="fade-up">Signifiance!</h1>
             {/* <p className="text-xl text-gray-100 mb-8" data-aos="fade-up" data-aos-delay="200">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p> */}
             {/* <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
@@ -41,7 +43,8 @@ export default function Hero() {
           </div>
 
           {/* 3D Model */}
-          <Image src={SignphicLogo} alt='3D viewer' className='w-max' />
+          {/* <Image src={SignphicLogo} alt='3D viewer' className='w-max' /> */}
+          <Spline scene="https://prod.spline.design/OyuSyL2zM4M2oXmC/scene.splinecode" />
 
           {/* <ModalVideo
             thumb={VideoThumb}

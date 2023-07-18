@@ -4,7 +4,6 @@ import { Inter, Architects_Daughter } from 'next/font/google'
 import localFont from 'next/font/local' 
 
 import Header from '@/components/ui/header'
-import Banner from '@/components/banner'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -31,7 +30,7 @@ const mona_sans = localFont({
 
 export const metadata = {
   title: 'Signphic Online Solutions',
-  description: 'Looking for blah blah blah blah', //bro fill this da
+  description: 'Looking for _________', //bro fill this da
 }
 
 export default function RootLayout({
@@ -45,7 +44,6 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
           {children}
-          <Banner />
         </div>
       </body>
     </html>
